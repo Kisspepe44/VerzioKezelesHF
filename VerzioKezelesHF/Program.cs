@@ -26,6 +26,28 @@ namespace VerzioKezelesHF
                 atlag = atlag + szamok[i];
             }
             Console.WriteLine("A számok átlaga : " + atlag/szamok.Length);
+            int max = szamok[0];
+            for (int i = 0; i < szamok.Length; i++)
+            {
+                
+                if (szamok[i] > max)
+                {
+                    max = szamok[i];
+                }
+            }
+            Console.WriteLine("A megadott számok közül a legnagyobb a(z) " + max);
+            int min = szamok[0];
+            for (int i = 0; i < szamok.Length; i++)
+            {
+
+                if (szamok[i] < min)
+                {
+                    min= szamok[i];
+                }
+            }
+            Console.WriteLine("A megadott számok közül a legkissebb a(z) " + min);
+
+
             Console.ReadKey();
         }
     }
