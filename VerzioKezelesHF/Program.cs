@@ -10,8 +10,9 @@ namespace VerzioKezelesHF
     {
         static void Main(string[] args)
         {
-            int[] szamok = new int[10];
-            Console.WriteLine("Kérem adjon meg 10 számot:");
+            Console.WriteLine("Kérem adja mág hány számot szeretne megadni: ");
+            int[] szamok = new int[Convert.ToInt32(Console.ReadLine())];
+            Console.WriteLine("Kérem adja meg a {0} számot:",szamok.Length ) ;
             
             for (int i = 0; i < szamok.Length; i++)
             {
